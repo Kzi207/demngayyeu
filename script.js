@@ -1,11 +1,19 @@
 // Ngày bắt đầu yêu nhau
 const yourDate = new Date("2024-02-10T20:00:00");
 
-// Danh sách các liên kết nhạc
+// danh sách nhạc
 const musicLinks = [
     '../music/nhac.mp3',
-    '../music/nhac2.mp3',
-    '../music/nhac3.mp3'
+    '../music/nhac2.mp3', ///thiêm nhạc ở đây
+    '../music/nhac3.mp3',
+    '../music/anhdaquenvoicodon.mp3',
+    '../music/emdaxaanh.mp3',
+    '../music/idthangmay.mp3',
+    '../music/bandoi.mp3',
+    '../music/haiduanhoc.mp3',
+    '../music/doantinhphai.mp3',
+    '../music/tinhca.mp3',
+    '../music/thucuoi.mp3'
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -28,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         olock()
     }, 1000);
 
-    // Chọn một bài hát ngẫu nhiên từ danh sách
+
     const randomIndex = Math.floor(Math.random() * musicLinks.length);
     const randomMusicLink = musicLinks[randomIndex];
     
